@@ -9,9 +9,10 @@ The game dynamically generates special objects with unique abilities based on ma
 | Match Pattern        | Created Object   | Functionality                                |
 |----------------------|-----------------|----------------------------------------------|
 | 3 Tiles (Any)        | Standard Clear  | Removes matched tiles                        |
-| 4 Tiles (Horizontal) | 💣 Horizontal Bomb | Clears the entire row                        |
-| 4 Tiles (Vertical)   | 🧨 Vertical Bomb   | Clears the entire column                     |
-| T or L Shape         | 💥 Large Bomb      | Triggers a 3x3 radial explosion              |
+| 4 Tiles (Horizontal) | 💣 Small Bomb      | Clears the entire row                        |
+| 4 Tiles (Vertical)   | 🧨 Large Bomb      | Clears the entire column                     |
+| 2x2 Square           | 🔷 Square Clear    | Clears both the row and column (cross effect)|
+| T or L Shape         | 💥 Radial Bomb     | Triggers a 3x3 radial explosion              |
 | 5 Tiles (Line)       | 🌈 Color Bomb      | Clears all tiles of a specific color         |
 
 ## 🕹️ Gameplay Flow
@@ -23,7 +24,7 @@ The game dynamically generates special objects with unique abilities based on ma
 
 ### Core Systems
 - **Grid Management:** NxN coordinate system handling tile states, spawning, and gravity-based displacement  
-- **Match Detection Engine:** High-performance recursive algorithm for horizontal, vertical, and cluster-based (T/L) patterns  
+- **Match Detection Engine:** High-performance recursive algorithm for horizontal, vertical, square, and cluster-based (T/L) patterns  
 - **Sequence Controller:** Robust state-manager handling timing between destruction, falling animations, and new match evaluations  
 
 ### Mobile Optimization

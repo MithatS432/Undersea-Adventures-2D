@@ -34,4 +34,19 @@ The game dynamically generates special objects with unique abilities based on ma
 ## 📋 Technical Stack
 - **Engine:** Unity 2D  
 - **Language:** C# (OOP, Event-driven architecture)  
-- **Target Platforms:** Android  
+- **Target Platforms:** Android
+
+## 📸 Screenshots
+
+Here are some in-game screenshots showcasing the mechanics and visuals:
+
+![Screenshot 670](Assets/Game%20Images/Screenshot%20(670).png)
+![Screenshot 671](Assets/Game%20Images/Screenshot%20(671).png)
+![Screenshot 672](Assets/Game%20Images/Screenshot%20(672).png)
+![Screenshot 673](Assets/Game%20Images/Screenshot%20(673).png)
+![Screenshot 674](Assets/Game%20Images/Screenshot%20(674).png)
+![Screenshot 675](Assets/Game%20Images/Screenshot%20(675).png)
+![Screenshot 676](Assets/Game%20Images/Screenshot%20(676).png)
+![Screenshot 677](Assets/Game%20Images/Screenshot%20(677).png)
+![Screenshot 678](Assets/Game%20Images/Screenshot%20(678).png)
+

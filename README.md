@@ -1,37 +1,36 @@
-# 🌊 Undersea Adventures 2D
-> **Mobile Match-3 Puzzle Game** with reactive power-ups and dynamic combo-driven gameplay.
+## 🌊 Undersea Adventures – 2D High-Performance Mobile Match-3 Engine
+Undersea Adventures is a mobile-focused puzzle game built on fluid grid mechanics, dynamic combo chains, and an advanced power-up system.  
+The project aims to deliver complex matching algorithms and reactive in-game events through an optimized architecture.
 
-![Banner](https://via.placeholder.com/800x300?text=Undersea+Adventures+Gameplay+Preview)
+## 🎮 Game Mechanics & Logic
+The game dynamically generates special objects with unique abilities based on match patterns:
 
-## 📖 Overview
-Undersea Adventures is a high-performance, mobile-optimized match-3 experience. Built with a focus on **satisfying feedback loops** and **optimized rendering**, it features a robust grid system capable of handling complex chain reactions.
+### 💎 Match Types & Special Objects
+| Match Pattern        | Created Object   | Functionality                                |
+|----------------------|-----------------|----------------------------------------------|
+| 3 Tiles (Any)        | Standard Clear  | Removes matched tiles                        |
+| 4 Tiles (Horizontal) | 💣 Horizontal Bomb | Clears the entire row                        |
+| 4 Tiles (Vertical)   | 🧨 Vertical Bomb   | Clears the entire column                     |
+| T or L Shape         | 💥 Large Bomb      | Triggers a 3x3 radial explosion              |
+| 5 Tiles (Line)       | 🌈 Color Bomb      | Clears all tiles of a specific color         |
 
-### Key Highlights
-* **Dynamic Grid:** Gravity-based collapse and tile refilling.
-* **Optimized Performance:** Uses Sprite Atlases to minimize draw calls—crucial for mobile thermal overhead.
-* **Reactive VFX:** Feedback intensity scales with combo length.
+## 🕹️ Gameplay Flow
+- **Input:** Smooth touch/mouse drag-and-drop system for tile swapping  
+- **Chain Reactions:** Gravity-based tile collapse triggering sequential combos  
+- **Feedback System:** Dynamic visual feedback scaling intensity based on combo length  
 
----
-
-## 🎮 Game Mechanics
-
-### 💣 Power-up System
-| Power-up | Pattern | Effect |
-| :--- | :--- | :--- |
-| **Small Bomb** | 4 Horizontal | Clears entire row |
-| **Large Bomb** | 4 Vertical | Clears entire column |
-| **Color Bomb** | T or L Shape | Clears all tiles of a specific type |
-
-### 🎯 Match Logic
-* **Match 3:** Standard point gain.
-* **Match 4:** Generates specialized bombs based on swipe direction.
-* **5+ / L-T Shape:** Triggers enhanced board-clear events.
-
----
-
-## 🛠️ Technical Architecture
+## 🛠️ Technical Features
 
 ### Core Systems
-1. **Grid Manager:** Handles the NxN coordinate system and tile spawning.
-2. **Match Engine:** Recursive algorithm for detecting horizontal, vertical, and L-shaped clusters.
-3. **Sequence Controller:** Manages the "Wait-for-Collapse" state machine to ensure combos trigger in the correct order.
+- **Grid Management:** NxN coordinate system handling tile states, spawning, and gravity-based displacement  
+- **Match Detection Engine:** High-performance recursive algorithm for horizontal, vertical, and cluster-based (T/L) patterns  
+- **Sequence Controller:** Robust state-manager handling timing between destruction, falling animations, and new match evaluations  
+
+### Mobile Optimization
+- **Sprite Atlas Integration:** Optimized rendering by grouping textures, reducing draw calls  
+- **Memory Management:** Efficient object lifecycle handling to ensure stable FPS on mid-to-low end devices  
+
+## 📋 Technical Stack
+- **Engine:** Unity 2D  
+- **Language:** C# (OOP, Event-driven architecture)  
+- **Target Platforms:** Android  
